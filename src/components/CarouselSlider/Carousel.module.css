@@ -1,0 +1,28 @@
+.parent {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider {
+  display: inline-block;
+  gap: 0.5rem;
+  animation: 7s slide infinite linear;
+}
+
+.slider > img {
+  margin-right: 0.375rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 375px) {
+}
